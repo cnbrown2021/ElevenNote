@@ -15,10 +15,11 @@ namespace ElevenNote.Data
         [Display]
         public Guid OwnerId { get; set; }
         [Required]
+        public string Title { get; set; }
+        [Required]
         public string Content { get; set; }
         [Required]
         public DateTimeOffset CreatedUtc { get; set; }
         public DateTimeOffset? ModifiedUtc { get; set; }
-        public string Title { get; set; }
     }
 }
